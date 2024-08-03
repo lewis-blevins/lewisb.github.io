@@ -1,0 +1,62 @@
+#top {
+    position: fixed;
+    width: 100%;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+    top: 0;
+    left: 0; 
+    right: 0;
+    background-color: #d5d5d5;
+    color: #000000;
+    height: 123px;    
+    border: none;
+    margin: 0;
+    padding: 0; 
+
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+body {
+    background-image: url("bg2.png");
+    background-repeat: repeat;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 25px;
+    font-size: 20px;
+    margin-left: 15%; 
+    margin-right: 15%;
+    color: #ffffff;
+    padding-top: 130px; 
+}
+
+
+/* unvisited link */
+a:link {
+  color: rgb(171, 169, 169);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(171, 169, 169);
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: rgb(171, 169, 169);
+}
+
+.responsive {
+  max-width: 100%;
+  text-align: center;
+  height: auto; 
+}

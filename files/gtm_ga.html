@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html><head><title>Lewis Blevins Mini Portfolio</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css" title="style"></head>
+  <body>
+    <div id = "top" style="text-align:center">
+      <a href="../index.html">
+        <img src="header.png" alt="Site header">
+      </a>
+    </div>
+  <div id="main">
+    </div>
+    <div id="site_content">
+<div style="text-align: center;">
+      </div>
+
+      <div id="content">
+      <div style="text-align: center;">
+        <h1><b>Deploying Google Analytics 4 via Google Tag Manager</b></h1>
+      </div>
+      <p>To deploy Google Tag Manager and Google Analytics on to your website follow the steps below. This guide assumes you have already have a Google Analytics 4 account and a basic understanding on Google Analytics. I have deployed Google Tag Manager and Google Analytics on to my personal website to track visitors and link clicks.
+        <br><br>
+        1. Go to tagmanager.google.com and create a container by going to the <b>Accounts</b> sections, clicking the <b>three ellipsis button</b> (next to the gear icon, and clicking <b>Create Container</b>).
+        <br><br><p style="text-align: center;"><img src="ga_create_container.png"></p></style><br>
+        2. In the window that opens provide an appropriate name (such as the domain name of your website) and select the target platform (during my set-ups I have selected <b>Web</b>) then click <b>Create</b>.
+        <br><br>
+        3. A window titled <i>Installed Google Tag Manager</i> will open. Follow the instructions in the window explaining where to paste the JavaScript code on your website. If you cannot alter your website code yourself as your development team to make the changes.
+        <br><br>
+        4. Close the <i>Installed Google Tag Manager</i> window and click <b>Tags</b> on the left side of the page.
+        <br><br><p style="text-align: center;"><img src="ga_tags.png"></p></style><br>  
+        5. On the page that opens click <b>New</b>.
+        <br><br>
+        6. Click within the <b>Tag Configuration</b> box and then click <b>Google Analytics</b> and then <b>Google Tag</b>.
+        <br><br>
+        7. Enter your Google Analytics <i>Measurement ID</i> into the <b>Tag ID</b> box (your <i>Measurement ID</i> can be found in Google Analytics 4 by going to <b>Admin</b> > <b>Data Streams</b>).
+        <br><br>
+        8. After adding the Tag ID click within <b>Triggering</b>, select <b>All Pages</b>, click <b>Add</b>.
+        <br><br><p style="text-align: center;"><img src="ga_trigger_add.png"></p></style><br> 
+        9. Click <b>Save</b> and provide an appropriate name (such as: <i>GA4 tag configuration</i>) when prompted.
+        <br><br>
+        10. To test the tag is working click <b>Preview</b> at the top of the page, enter your website URL, and click <b>Connect</b>.
+        <br><br>
+        11. In Google Analytics 4 go to <b>Admin</b> > <b>DebugView</b>. Having just visited the page during testing in the previous step, a <i>page_view</i> event should appear on the timeline. You will also see activity in <b>Real-time</b> report. The image below shows my visit to my website from Cambridge.
+        <br><br><p style="text-align: center;"><img src="ga_cambridge_visit.png"></p></style><br> 
+
+  </div>
+</body></html>

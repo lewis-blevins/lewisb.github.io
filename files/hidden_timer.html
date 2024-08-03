@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Since 2024-06-15</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+			font-size: 70px;
+        }
+        #days-counter {
+            font-size: 168px;
+            font-weight: bold;
+            color: #00C503;
+        }
+    </style>
+</head>
+<body>
+    <h1>Days since June 15th 2024:</h1>
+    <div id="days-counter"></div>
+
+    <script>
+        function countDaysSince() {
+            const startDate = new Date(2024, 5, 15); // month index starts at 0, not 1
+            const today = new Date();
+            const timeDiff = today.getTime() - startDate.getTime();
+            const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24)-1);
+            return daysDiff;
+        }
+
+        function updateDaysCounter() {
+            const daysCounter = document.getElementById('days-counter');
+            const daysSinceDate = countDaysSince();
+            daysCounter.textContent = daysSinceDate;
+        }
+
+        // Update the counter immediately
+        updateDaysCounter();
+
+        // Update the counter every hour
+        setInterval(updateDaysCounter, 60 * 60 * 1000);
+    </script>
+</body>
+</html>
